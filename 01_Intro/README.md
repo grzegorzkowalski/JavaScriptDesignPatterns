@@ -1,4 +1,4 @@
-# Rozdział 2 - Wprowadzenie
+# Rozdział 1 - Wprowadzenie
 
 
 ### Zadania rozwiązuj w odpowiednim folderze w pliku main.js. Wynik sprawdzaj w konsoli.
