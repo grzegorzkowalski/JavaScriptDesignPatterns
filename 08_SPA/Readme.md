@@ -1,6 +1,8 @@
-## Zadanie 1
+##Rozdział 8 - Architektura aplikacji SPA
 
-Dołącz polyfill `fetch()`.
+### Do wykonania zadań wykorzystamy create-react-app.
+
+## Zadanie 1
 
 Stwórz komponent `BookInfo`, który przez props przyjmuje ISBN książki (`isbn`).
 
@@ -22,7 +24,7 @@ Przetestuj swój komponent w ten sposób:
 ```
 
 
-## Zadanie
+## Zadanie 2
 
 > ### JSON Server
 > Aby poprawnie wykonać to zadanie, musisz mieć zainstalowany `json-server`.
@@ -39,7 +41,7 @@ Przetestuj swój komponent w ten sposób:
 > Uruchomienie json-server: `json-server database/cars.json --watch`
 
 
-### Część 1 - Do wykonania z wykładowcą
+### Część 1
 
 Stwórz komponent `CarsManager`.
 
@@ -53,8 +55,15 @@ Niech komponent wyrenderuje w `div` element `ul` z elementami listy samochodów.
 
 Pamiętaj o zablokowaniu wyświetlania komponentu dopóki nie otrzymasz odpowiedzi z serwera.
 
-
 ### Część 2
+
+Zaimplementuj router w aplikacji, który obsłuży widoki:
+- Strona główna `/` zawierająca komponent `CarsManager`.
+- Strona `/addCar`.
+- Strona `/car`. 
+
+
+### Część 3
 
 Stwórz komponent `AddCar`, który będzie zawierał formularz służący do dodania samochodu do bazy danych. Musi zawierać pola:
 
@@ -67,7 +76,7 @@ Stwórz komponent `AddCar`, który będzie zawierał formularz służący do dod
 Po dodaniu auta do bazy ma ono również pojawić się na liście samochodów. **Nie należy wysyłać ponownego zapytania do bazy ani odświeżać strony!**.
 
 
-### Część 3
+### Część 4
 
 Stwórz komponent `Car`, który będzie miał za zadanie wyświetlać tylko jeden samochód z bazy danych. Należy tak zmodyfikować zadanie aby po pobraniu danych z bazy generować komponenty `Car` i przekazywać do nich przez `props` wszystkie niezbędne dane, a także callback funkcji, która usunie auto z bazy i odświeży widok.
 

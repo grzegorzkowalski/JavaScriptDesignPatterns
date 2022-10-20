@@ -6,5 +6,5 @@
 2. Dlatego nie chcemy na stałe wiązać interface z systemem operacyjnym.
 3. Proszę wdrożyć odpowiednie klasy (np. System, LinuxSystem, Interface, GraphicInterface).
 4. Proszę wdrożyć relacje między tymi elementami za pomocą wzorca bridge.
-5. Przetestuj poprawność rozwiązanie. Niech naciśniecie przycisku menu w naszym interface zwroci nam z systemu listę zainstalowanych programów. 
+5. Przetestuj poprawność rozwiązanie. Niech naciśniecie przycisku menu w naszym interface zwróci nam z systemu listę zainstalowanych programów. (na potrzeby zadania będzie to wywołanie w konsoli funkcji `displayMenu`).
 
