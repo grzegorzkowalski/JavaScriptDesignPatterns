@@ -18,3 +18,10 @@ const primeOnly = function() {
         }
     }
 }
+
+const primeObj = new primeOnly();
+primeObj.addPrimeNumber(1);
+primeObj.addPrimeNumber(3);
+primeObj.addPrimeNumber(3);
+primeObj.addPrimeNumber(5);
+console.log(primeObj.getPrimeNumberTab());
