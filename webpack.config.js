@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const taskPath = "06_ClassicDesignPatterns/02_Factory/index.js";
+const taskPath = "06_ClassicDesignPatterns/15_Strategy/Solution/index.js";
 
 module.exports = {
     entry: {
