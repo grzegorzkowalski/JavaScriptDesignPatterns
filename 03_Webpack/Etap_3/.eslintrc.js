@@ -17,7 +17,7 @@ module.exports = {
         "no-unused-vars": 1,
         "camelcase": 1,
         "no-nested-ternary": 1,
-        "no-console": 1,
+        "no-console": 0,
         "no-template-curly-in-string": 1,
         "no-self-compare": 1,
     },

@@ -1,9 +1,9 @@
-let test = "test";
+let test = "test2";
 
 console.log(test);
 
 const heading = document.createElement('h1');
-heading.textContent = 'Działa!';
+heading.textContent = 'Działa2!';
 
 const app = document.querySelector('#root');
 app.append(heading);

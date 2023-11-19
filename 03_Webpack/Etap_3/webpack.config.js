@@ -2,9 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
+const linkToTask = `../../04_Modules/src/index.js`
+
 module.exports = {
     entry: {
-        main: path.resolve(__dirname, './src/index.js'),
+        main: path.resolve(__dirname, linkToTask),
     },
     output: {
         path: path.resolve(__dirname, './dist'),
