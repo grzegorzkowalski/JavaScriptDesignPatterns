@@ -1,27 +1,22 @@
 const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
-const evenNumbers = [];
-let evenSum = 0;
 
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0)
-    {
-        evenNumbers.push(numbers[i])
+const returnEvenElements = (tab) => tab.filter(el => el % 2 === 0);
+const sumTabElements = (tab) => tab.reduce((prev, cur) => prev + cur);
+const returnRandomValueFromSum = (sum) => Math.floor(Math.random() * (10 - 1) + 1) * sum;
+const getScoreInfo = (score, grade = 99) => {
+    if (score > grade) {
+        console.log(`${score} - to całkiem duża liczba.`);
+    }
+    else {
+        console.log(`${score} - to małą liczba.`);
     }
 }
 
-for (let i = 0; i < evenNumbers.length; i++) {
-    evenSum += evenNumbers[i];
-}
+getScoreInfo(returnRandomValueFromSum(sumTabElements(returnEvenElements(numbers))), 300);
 
-let multipyScore = Math.floor(Math.random() * (10 - 1) + 1) * evenSum;
-
-if (multipyScore > 99) {
-    console.log(`${multipyScore} - to całkiem duża liczba.`);
-}
-else {
-    console.log(`${multipyScore} - to małą liczba.`);
-}
-
-
+const evenTab = returnEvenElements(numbers);
+const sum = sumTabElements(evenTab);
+const score = returnRandomValueFromSum(sum);
+getScoreInfo(score, 300);
 
 
