@@ -14,7 +14,7 @@ const primeOnly = function() {
             }
         },
         getPrimeNumberTab: function () {
-            return tab;
+            return [...tab];
         }
     }
 }
